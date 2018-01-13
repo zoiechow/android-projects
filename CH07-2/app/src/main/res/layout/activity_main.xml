@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.hope.myapplication.MainActivity">
+
+<DatePicker
+    android:id="@+id/myDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:calendarViewShown="false"
+    android:theme="@android:style/Theme.Holo.Light">
+</DatePicker>
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myDate"
+        android:text="获取DataPicker得值"/>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b1"
+        android:text=""/>
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <DigitalClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></DigitalClock>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
